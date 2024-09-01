@@ -18,7 +18,7 @@ Example:
         "styles": "styles",
         "mbtiles": "data",
         "pmtiles": "data",
-        "files": "public/files"
+        "files": "files"
       },
       "domains": [
         "localhost:8080",
