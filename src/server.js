@@ -94,11 +94,12 @@ function start(opts) {
   paths.sprites = path.resolve(paths.root, paths.sprites || '');
   paths.mbtiles = path.resolve(paths.root, paths.mbtiles || '');
   paths.pmtiles = path.resolve(paths.root, paths.pmtiles || '');
-  paths.icons = path.resolve(
-    paths.root,
-    paths.icons || 'public/resources/images',
-  );
-  paths.files = path.resolve(paths.root, paths.files || 'public/files');
+  paths.icons = paths.icons
+    ? path.resolve(paths.root, paths.icons)
+    : path.resolve(__dirname, '../public/resources/images');
+  paths.files = paths.files
+    ? path.resolve(paths.root, paths.files)
+    : path.resolve(__dirname, '../public/files');
 
   const startupPromises = [];
 
