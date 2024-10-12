@@ -264,8 +264,8 @@ fs.stat(path.resolve(opts.config), async (err, stats) => {
         return startWithInputFile(inputFile);
       } else {
         const url =
-          'https://github.com/maptiler/tileserver-gl/releases/download/v1.3.0/zurich_switzerland.mbtiles';
-        const filename = 'zurich_switzerland.mbtiles';
+          'https://github.com/sentosanetwork/sun-paradise-tile/releases/download/tile/phuquoc.mbtiles';
+        const filename = 'phuquoc.mbtiles';
         const writer = fs.createWriteStream(filename);
         console.log(`No input file found`);
         console.log(`[DEMO] Downloading sample data (${filename}) from ${url}`);
