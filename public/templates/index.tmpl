@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TileServer GL - Server for vector and raster maps with GL styles</title>
+  <title>Sun Paradise Tile</title>
   <link rel="stylesheet" type="text/css" href="{{public_url}}index.css{{&key_query}}" />
   <script>
     function toggle_xyz(id) {
@@ -28,19 +28,6 @@
 </head>
 <body>
   <section>
-    <h1 class="title {{#if is_light}}light{{/if}}"><img src="{{public_url}}images/logo.png{{&key_query}}" alt="TileServer GL" /></h1>
-    <h2 class="subtitle">Vector {{#if is_light}}<s>and raster</s>{{else}}and raster{{/if}} maps with GL styles</h2>
-    <h2 class="box-header">Filter</h2>
-    <!-- filter box -->
-    <div class="box">
-      <div class="filter-item">
-        <div class="filter-details">
-          <h3>Filter styles and data by name or identifier</h3>
-          <!-- filter input , needs to call filter() when content changes...-->
-          <input id="filter" type="text" oninput="filter()" placeholder="Start typing name or identifier" />
-        </div>
-      </div>
-    </div>
     {{#if styles}}
       <h2 class="box-header">Styles</h2>
       <div class="box">
@@ -124,10 +111,6 @@
     {{/if}}
   </section>
   <footer>
-    <a href="https://www.maptiler.com/" target="_blank"><img src="{{public_url}}images/maptiler-logo.svg{{&key_query}}" /></a>
-    <p>
-      <a href="https://github.com/maptiler/tileserver-gl" target="_blank">Powered by TileServer GL ({{server_version}})</a> – <a href="https://www.maptiler.com/" target="_blank">an open-source project from MapTiler.</a>
-    </p>
   </footer>
 </body>
 </html>
